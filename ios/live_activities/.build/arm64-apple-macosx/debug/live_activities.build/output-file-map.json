@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/borisgrigorov/Dev/flutter_live_activities/ios/live_activities/.build/arm64-apple-macosx/debug/live_activities.build/master.swiftdeps"
+  },
+  "/Users/borisgrigorov/Dev/flutter_live_activities/ios/live_activities/Sources/live_activities/LiveActivitiesPlugin.swift": {
+    "dependencies": "/Users/borisgrigorov/Dev/flutter_live_activities/ios/live_activities/.build/arm64-apple-macosx/debug/live_activities.build/LiveActivitiesPlugin.d",
+    "object": "/Users/borisgrigorov/Dev/flutter_live_activities/ios/live_activities/.build/arm64-apple-macosx/debug/live_activities.build/LiveActivitiesPlugin.swift.o",
+    "swiftmodule": "/Users/borisgrigorov/Dev/flutter_live_activities/ios/live_activities/.build/arm64-apple-macosx/debug/live_activities.build/LiveActivitiesPlugin~partial.swiftmodule",
+    "swift-dependencies": "/Users/borisgrigorov/Dev/flutter_live_activities/ios/live_activities/.build/arm64-apple-macosx/debug/live_activities.build/LiveActivitiesPlugin.swiftdeps"
+  }
+}

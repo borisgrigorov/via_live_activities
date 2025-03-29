@@ -1,0 +1,4 @@
+module live_activities {
+    header "/Users/borisgrigorov/Dev/flutter_live_activities/ios/live_activities/.build/arm64-apple-macosx/debug/live_activities.build/live_activities-Swift.h"
+    requires objc
+}
