@@ -310,7 +310,8 @@ public class LiveActivitiesPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
       remainingStops: data["remainingStops"] as? Int ?? 0,
       destination: data["destination"] as? String ?? "",
       arrivalTime: data["arrivalTime"] as? String ?? "",
-      poulickaClip: data["poulickaClip"] as? Bool ?? false
+      shape: data["shape"] as? String ?? "",
+      lang: data["lang"] as? String ?? ""
     )
     var deliveryActivity: Activity<LiveActivitiesAppAttributes>?
 
@@ -366,7 +367,7 @@ public class LiveActivitiesPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
       }
 
       let updatedStatus = LiveActivitiesAppAttributes.LiveDeliveryData(
-        appGroupId: self.appGroupId!, 
+        appGroupId: self.appGroupId!,
         tripStatus: data["tripStatus"] as? String ?? "",
         routeNumber: data["routeNumber"] as? String ?? "",
         routeColor: data["routeColor"] as? String ?? "",
@@ -377,7 +378,9 @@ public class LiveActivitiesPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
         remainingStops: data["remainingStops"] as? Int ?? 0,
         destination: data["destination"] as? String ?? "",
         arrivalTime: data["arrivalTime"] as? String ?? "",
-        poulickaClip: data["poulickaClip"] as? Bool ?? false)
+        shape: data["shape"] as? String ?? "",
+        lang: data["lang"] as? String ?? ""
+      )
       await activity.update(using: updatedStatus, alertConfiguration: alertConfig?.getAlertConfig())
 
       result(nil)
@@ -567,7 +570,8 @@ public class LiveActivitiesPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
       var remainingStops: Int
       var destination: String
       var arrivalTime: String
-      var poulickaClip: Bool
+      var shape: String
+      var lang: String
     }
 
     var id = UUID()
